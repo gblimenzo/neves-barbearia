@@ -85,6 +85,18 @@
   .card p{color:var(--muted);font-size:15px;margin:6px 0 18px}
   .price{color:var(--gold);font-weight:700;font-size:15px}
 
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:40px}
+  .mgroup{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .mgroup h3{font-size:30px;color:var(--gold);margin-bottom:10px}
+  .mgroup ul{list-style:none}
+  .mgroup li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+  .mgroup li:last-child{border-bottom:0}
+  .mgroup li b{font-weight:600;font-size:15px}
+  .mgroup li small{display:block;color:var(--muted);font-size:12px}
+  .mgroup li>span{color:var(--txt);font-weight:700;white-space:nowrap;font-size:15px}
+  .pl{font-size:10px;text-transform:uppercase;letter-spacing:1px;background:rgba(192,38,28,.15);color:var(--gold2);padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .pay{display:flex;gap:8px;flex-wrap:wrap}
+  .pay span{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
   /* ASSINATURA */
   .plan{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
     background:linear-gradient(135deg,#2a0f0d,#141414);border:1px solid #4a1e1a;border-radius:26px;padding:56px}
@@ -169,34 +181,15 @@
     <div class="sec-head">
       <small>O que fazemos</small>
       <h2>Serviços</h2>
-      <p>Profissionais que explicam o corte, ensinam a manter e entregam o resultado que você pediu.</p>
+      <p>Do corte à química: tudo que você precisa num lugar só. Preços atualizados.</p>
     </div>
     <div class="grid">
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
-        <h3>Corte</h3>
-        <p>Degradê, social, tesoura ou máquina. Do clássico ao moderno.</p>
-        <div class="price">A partir de R$ --</div>
-      </div>
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M7 3v4a5 5 0 0 0 10 0V3"/><path d="M12 12v9M8 21h8"/></svg></div>
-        <h3>Barba</h3>
-        <p>Desenho, alinhamento e acabamento com toalha quente.</p>
-        <div class="price">A partir de R$ --</div>
-      </div>
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.6 6.5 19.5l1-6.2L3 8.9 9 8z"/></svg></div>
-        <h3>Corte + Barba</h3>
-        <p>O combo completo para sair renovado.</p>
-        <div class="price">A partir de R$ --</div>
-      </div>
-      <div class="card">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
-        <h3>Sobrancelha & Pigmentação</h3>
-        <p>Detalhes que fazem toda a diferença no visual.</p>
-        <div class="price">Consulte</div>
-      </div>
+      <div class="card"><h3>Corte</h3><p>Degradê, social, tesoura ou máquina.</p><div class="price">R$ 50 • 30 min</div></div>
+      <div class="card"><h3>Barba</h3><p>Desenho, alinhamento e acabamento caprichado.</p><div class="price">R$ 50 • 30 min</div></div>
+      <div class="card"><h3>Corte + Barba</h3><p>O combo completo pra sair renovado.</p><div class="price">R$ 100 • 60 min</div></div>
     </div>
+    <div class="menu"><div class="mgroup"><h3>Cabelo</h3><ul><li><div><b>Corte</b> <span class="pl">no plano</span><small>30 min</small></div><span>R$ 50</span></li><li><div><b>Corte pigmentado</b><small>45 min</small></div><span>R$ 70</span></li><li><div><b>Pezinho</b><small>15 min</small></div><span>R$ 15</span></li><li><div><b>Penteado</b><small>15 min</small></div><span>a partir de R$ 20</span></li><li><div><b>Hidratação</b> <span class="pl">no plano</span><small>30 min</small></div><span>R$ 30</span></li></ul></div><div class="mgroup"><h3>Barba</h3><ul><li><div><b>Barba</b> <span class="pl">no plano</span><small>30 min</small></div><span>R$ 50</span></li><li><div><b>Corte e barba</b> <span class="pl">no plano</span><small>60 min</small></div><span>R$ 100</span></li><li><div><b>Pigmentação de barba</b><small>15 min</small></div><span>R$ 25</span></li></ul></div><div class="mgroup"><h3>Química</h3><ul><li><div><b>Luzes</b><small>30 min</small></div><span>R$ 150</span></li><li><div><b>Platinado</b><small>30 min</small></div><span>R$ 200</span></li><li><div><b>Selagem</b> <span class="pl">no plano</span><small>90 min</small></div><span>R$ 150</span></li><li><div><b>Botox</b> <span class="pl">no plano</span><small>90 min</small></div><span>R$ 120</span></li><li><div><b>Tintura</b><small>15 min</small></div><span>R$ 25</span></li></ul></div><div class="mgroup"><h3>Estética</h3><ul><li><div><b>Sobrancelhas</b> <span class="pl">no plano</span><small>15 min</small></div><span>R$ 20</span></li><li><div><b>Sobrancelha na cera</b><small>15 min</small></div><span>R$ 35</span></li><li><div><b>Depilação de nariz (cera)</b> <span class="pl">no plano</span><small>15 min</small></div><span>R$ 20</span></li><li><div><b>Depilação de orelha (cera)</b> <span class="pl">no plano</span><small>15 min</small></div><span>R$ 20</span></li><li><div><b>Nariz + orelha (cera)</b><small>15 min</small></div><span>R$ 30</span></li><li><div><b>Terapia facial</b> <span class="pl">no plano</span><small>15 min</small></div><span>R$ 30</span></li><li><div><b>Manicure</b><small>30 min</small></div><span>R$ 30</span></li><li><div><b>Pedicure</b><small>30 min</small></div><span>Consultar</span></li><li><div><b>Manicure e pedicure</b><small>60 min</small></div><span>R$ 60</span></li></ul></div></div>
+    <div style="text-align:center;margin-top:40px"><a class="btn" href="https://sites.appbarber.com.br/nevesbarbearia-1978" target="_blank">Agendar serviço</a></div>
   </div>
 </section>
 
@@ -210,10 +203,10 @@
         <a class="btn" href="https://wa.me/5598992362155?text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20plano%20de%20assinatura." target="_blank">Quero assinar</a>
       </div>
       <ul>
-        <li>Cortes ilimitados ou pacote mensal</li>
-        <li>Prioridade no agendamento</li>
+        <li>Corte, barba, sobrancelha e mais inclusos</li>
+        <li>Assina e agenda direto pelo app</li>
         <li>Valor fixo, sem surpresa</li>
-        <li>Cafezinho e cerveja por nossa conta</li>
+        <li>Química e estética também entram no plano</li>
       </ul>
     </div>
   </div>
@@ -248,10 +241,14 @@
       <div class="info-item">
         <h4>Horários</h4>
         <div class="hours">
-          <span>Segunda a sexta</span><span>9h às 20h</span>
-          <span>Sábado</span><span>9h às 18h</span>
+          <span>Segunda a sexta</span><span>9h–12h • 13h–20h</span>
+          <span>Sábado</span><span>8h–12h • 13h–19h</span>
           <span>Domingo</span><span>Fechado</span>
         </div>
+      </div>
+      <div class="info-item">
+        <h4>Pagamento</h4>
+        <div class="pay"><span>Dinheiro</span><span>Crédito</span><span>Débito</span></div>
       </div>
       <div class="info-item">
         <h4>Contato</h4>
